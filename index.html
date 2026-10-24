@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Gibertoni | Desenvolvedor Frontend</title>
+  <meta name="description" content="Portfólio de Leonardo Gibertoni, estudante de Análise e Desenvolvimento de Sistemas na Fatec Taquaritinga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fundo" aria-hidden="true"></div>
+  <a class="skip" href="#projetos">Ir para os projetos</a>
+
+  <header class="topo" id="topo">
+    <a class="marca" href="#inicio"><span class="marca-ponto"></span>Leonardo Gibertoni</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#contato">Contato</a>
+      <button class="tema-btn" id="temaBtn" type="button" aria-label="Alternar tema claro e escuro">
+        <span class="tema-icone"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="selo"><span class="selo-luz"></span>Aberto a estágio e primeiras oportunidades</p>
+        <h1>Oi, eu sou o <span class="grad">Leonardo</span>.<br>Construo sites <span class="digita" id="digita">com HTML</span><span class="cursor">|</span></h1>
+        <p class="hero-sub">
+          Estudante de Análise e Desenvolvimento de Sistemas na Fatec de Taquaritinga.
+          Aprendo construindo: cada projeto aqui é um passo do meu RoadMap.
+        </p>
+        <div class="acoes">
+          <a class="btn btn-principal" href="#projetos">Ver projetos</a>
+          <a class="btn" href="https://github.com/LeoGibertoni" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/leonardo-gibertoni-b9b041329/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="janela" aria-hidden="true">
+        <div class="janela-barra">
+          <span></span><span></span><span></span>
+          <em>leonardo.js</em>
+        </div>
+<pre class="codigo"><span class="k">const</span> <span class="v">leonardo</span> = {
+  <span class="p">nome</span>: <span class="s">"Leonardo Gibertoni"</span>,
+  <span class="p">curso</span>: <span class="s">"ADS na Fatec"</span>,
+  <span class="p">cidade</span>: <span class="s">"Taquaritinga, SP"</span>,
+  <span class="p">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],
+  <span class="p">aprendendo</span>: [<span class="s">"C#"</span>, <span class="s">"Spring Boot"</span>],
+  <span class="p">disponivel</span>: <span class="b">true</span>
+};</pre>
+      </div>
+    </section>
+
+    <section class="secao revela" id="sobre">
+      <div class="cab">
+        <p class="eyebrow">01 · Sobre</p>
+        <h2>Aprender fazendo é o meu método.</h2>
+      </div>
+      <div class="sobre">
+        <p>
+          Comecei pelo básico, com HTML5 e CSS, e fui subindo degrau por degrau:
+          JavaScript, lógica de programação em C#, administração de firewall e Java Spring Boot.
+          Gosto de ver o que escrevi funcionando na tela, e é por isso que cada estudo vira um projeto no GitHub.
+        </p>
+        <ul class="skills" aria-label="Tecnologias">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git e GitHub</li>
+          <li>SQL (Oracle)</li>
+          <li class="aprendendo">C# · aprendendo</li>
+          <li class="aprendendo">Spring Boot · aprendendo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao revela" id="projetos">
+      <div class="cab">
+        <p class="eyebrow">02 · Projetos</p>
+        <h2>O que já construí.</h2>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar projetos">
+        <button class="filtro ativo" data-filtro="todos" type="button">Todos</button>
+        <button class="filtro" data-filtro="html" type="button">HTML e CSS</button>
+        <button class="filtro" data-filtro="js" type="button">JavaScript</button>
+      </div>
+
+      <ul class="projetos" id="listaProjetos">
+        <li class="projeto" data-tipo="html">
+          <span class="num">01</span>
+          <h3>Primeiro projeto</h3>
+          <p>Meu primeiro site do RoadMap, só com HTML5 e CSS. Reúne projetos, experiência, formação e contato.</p>
+          <p class="tags"><span>HTML5</span><span>CSS</span></p>
+          <a class="link" href="https://github.com/LeoGibertoni/primeiro-projeto" target="_blank" rel="noopener">Ver no GitHub <i>→</i></a>
+        </li>
+        <li class="projeto" data-tipo="js">
+          <span class="num">02</span>
+          <h3>Segundo projeto</h3>
+          <p>O segundo passo do RoadMap, agora com JavaScript para dar vida e comportamento às páginas.</p>
+          <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+          <a class="link" href="https://github.com/LeoGibertoni/segundo_projeto" target="_blank" rel="noopener">Ver no GitHub <i>→</i></a>
+        </li>
+        <li class="projeto" data-tipo="html">
+          <span class="num">03</span>
+          <h3>Loja de hardware</h3>
+          <p>Site de uma loja de hardware, com vitrine de produtos e foco em layout limpo.</p>
+          <p class="tags"><span>HTML</span><span>CSS</span></p>
+          <a class="link" href="https://github.com/LeoGibertoni?tab=repositories" target="_blank" rel="noopener">Ver repositórios <i>→</i></a>
+        </li>
+        <li class="projeto" data-tipo="html">
+          <span class="num">04</span>
+          <h3>SchoolManager</h3>
+          <p>Tela de login de um sistema escolar, com perfis de teste para cada tipo de usuário.</p>
+          <p class="tags"><span>HTML</span><span>CSS</span></p>
+          <a class="link" href="https://github.com/LeoGibertoni?tab=repositories" target="_blank" rel="noopener">Ver repositórios <i>→</i></a>
+        </li>
+      </ul>
+      <p class="vazio" id="vazio" hidden>Nenhum projeto nessa categoria ainda.</p>
+    </section>
+
+    <section class="secao revela" id="trajetoria">
+      <div class="cab">
+        <p class="eyebrow">03 · Trajetória</p>
+        <h2>Experiência e formação.</h2>
+      </div>
+      <ol class="linha-tempo">
+        <li>
+          <span class="tipo">Experiência</span>
+          <h3>Aprendiz · CodeCycle</h3>
+          <p>Aprendendo programação na prática, com acompanhamento de instrutor.</p>
+        </li>
+        <li>
+          <span class="tipo">Experiência</span>
+          <h3>CEST</h3>
+          <p>Ajudei na produção de documentos e nos agendamentos de segurança do trabalho.</p>
+        </li>
+        <li>
+          <span class="tipo tipo-form">Formação</span>
+          <h3>Análise e Desenvolvimento de Sistemas · Fatec Taquaritinga</h3>
+          <p>Curso superior de tecnologia em andamento.</p>
+        </li>
+        <li>
+          <span class="tipo tipo-form">Cursos</span>
+          <h3>C#, Firewall e Java Spring Boot</h3>
+          <p>C# primeiros passos (lógica e algoritmos), Administração de Firewall e Java Spring Boot.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="secao revela" id="contato">
+      <div class="cta">
+        <p class="eyebrow">04 · Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p>Tem uma vaga, estágio ou projeto em mente? Me chama por um dos canais abaixo.</p>
+        <div class="acoes acoes-centro">
+          <a class="btn btn-principal" href="https://www.linkedin.com/in/leonardo-gibertoni-b9b041329/" target="_blank" rel="noopener">Falar no LinkedIn</a>
+          <a class="btn" href="https://github.com/LeoGibertoni" target="_blank" rel="noopener">Ver o GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano">2026</span> Leonardo Gibertoni · Feito com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
